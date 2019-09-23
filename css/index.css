@@ -12,9 +12,19 @@ a{
 a:hover{
 	text-decoration: none;
 }
-body{
-	overflow-x: hidden;
+html {
+    width: 100%;
+    height:auto;
+    overflow-x: hidden;
 }
+
+body {
+   
+    width: 100%;
+  
+    /* overflow-y:scroll; */
+}
+
 .slide-pic{
 	margin-top:5px;
 }
@@ -43,14 +53,13 @@ body{
 .head-title{
 	position: absolute;
 	left: 50%;
-	margin-left: -68px;
 	margin-top:5px;
 	font-size: 46px;
 	/*font-weight: */
 }
 .slide-left{
 	float: left;
-	border:1px solid red;
+	/* border:1px solid red; */
 	line-height: 60px;
 	position: relative;
 }
@@ -508,21 +517,20 @@ body{
 
 }
 
-.search-menu{
+/* .search-menu{
 	width: 100%;
 	height: calc(100vh - 98px);
 	margin-bottom: 100px;
 	position: absolute;
 	top:30px;
 	left: 0px;
-	border:1px solid pink;
 	z-index: 111;
 	background-color: #fff;
 	overflow-y: scroll;
 	box-sizing: content-box;
 	resize: vertical;
 	display: none;
-}
+} */
 .search-menu ul li{
 	width: 88%;
 	margin: 0px auto;
@@ -645,7 +653,7 @@ body{
 }
 .banner{
 	/*border:1px solid blue;*/
-	width: 90%;
+	width: 82%;
 	/*width: 1240px;*/
 	margin:0px auto;
 	overflow: hidden; 
@@ -843,8 +851,10 @@ body{
 
 /* 中间轮播图 */
 .product-content{
+	width: 80%;
 	/*border: 1px solid red;*/
 	margin:20px auto;
+	opacity: 0;
 }
 .product-content-head{
 	/*border: 1px solid blue;*/
@@ -860,45 +870,52 @@ body{
 	margin: 20px auto;
 }
 .product-content-mid main{
-	overflow: hidden;
-	margin:0px 10px;
+	width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    /* border: 1px solid blue; */
+    padding: 0px 80px;
 }
 .product-content-mid {
-	/*border: 1px solid green;*/
-	width: 65%;
+	/* border: 1px solid green; */
+	width: 85%;
 	/* height: 100%; */
 	margin: 0px auto;
-	/*overflow: hidden;*/
+	/* overflow: hidden; */
 
 	position: relative;
-	padding: 0px 80px;
+	/* padding: 0px 80px; */
 	box-sizing: content-box;
 }
 .product-content-mid ul{
-	width: 400%;
+	width: 466.6%;
 	/*border: 1px solid pink;*/
 	overflow: hidden;
 	position: relative;
-	left: 0%;
+	left: -33.3%;
 	padding-right: 1px;
 }
 .product-content-mid ul li{
 	/*border: 1px solid orange;*/
 	float: left;
-	width: 8.03%;
+	width: 6.84%;
 	height: 100%;
 	margin-right:0.3%;
+}
+.big-pic{
+	display: block;
+		background-color: #fffaf7;
 }
 .product-content-mid li img{
 	width: 100%;
 	height: 100%;
-	background-color: #fffaf7;
+
 }
 .product-text{
 	width: 100%;
 	margin-top: 20px;
 }
-.product-text a{
+.product-text  a{
 	display: block;
 	text-align: center;
 }
@@ -959,6 +976,16 @@ body{
 	transition: 2s;
 	position: relative;
 }
+
+.pd-hide{
+	opacity: 0;
+}
+.pd-show{
+	opacity: 1;
+}
+
+
+
 .sale{
 	position: absolute;
 	top: 0px;
@@ -998,12 +1025,12 @@ body{
 	left: 0%;
 	z-index: 10;
 	width: 7%;
-	height: 63%;
-	line-height: 250px;
+	height: 60%;
+	line-height: 60%;
 	font-size: 30px;
 	outline-style: none;
 	border-style: none;
-	background-color: #fffaf7;;
+	background-color: transparent;
 	color: #888;
 	padding:10px;
 
@@ -1015,12 +1042,12 @@ body{
 	right: 0%;
 	z-index: 10;
 	width: 8%;
-	height: 63%;
-	line-height: 250px;
+	height: 60%;
+	line-height: 60%;
 	font-size: 30px;
 	outline-style: none;
 	border-style: none;
-	background-color: #fffaf7;;
+	background-color: transparent;
 	color: #888;
 	padding:10px;
 
@@ -1058,6 +1085,7 @@ body{
 	width: 100%;
 	margin: 10% auto;
 	overflow: hidden;
+	opacity: 0;
 }
 .content-text{
 	width: 50%;
@@ -1097,17 +1125,19 @@ body{
 .landing-page{
 	/*border:1px solid blue;*/
 	margin:20px auto;
-	width: 65%;
+	width: 67%;
 }
 .content-header{
 	width: 100%;
 	/*border:1px solid green;*/
 	text-align: center;
 	margin:20px auto;
+	opacity: 0;
 }
 .landing-content{
 	/*border:1px solid pink;*/
 	overflow: hidden;
+	opacity: 0;
 }
 .basic-grid{
 	/*border:1px solid orange;*/
@@ -1144,6 +1174,7 @@ body{
 	width: 100%;
 	/*border:1px solid blue;*/
 	background-color: #f5faf5;
+	opacity: 0;
 }
 .signup-tout{
 	width: 65%;
@@ -1154,7 +1185,7 @@ body{
 
 }
 .signup-tout-left{
-	width: 25%;
+	width: 35%;
 	float: left;
 }
 .signup-tout-left img{
@@ -1204,6 +1235,7 @@ body{
 }
 .landing-page-header{
 	text-align: center;
+	opacity: 0;
 	/*border:1px solid red;*/
 }
 .landing-page-header h1{
@@ -1214,6 +1246,7 @@ body{
 	overflow: hidden;
 	margin:20px auto;
 	width: 100%;
+	opacity: 0;
 
 }
 .product-section{
@@ -1358,7 +1391,6 @@ body{
 	.signup-tout{
 	width: 100%;
 
-
 }
 
 
@@ -1382,7 +1414,9 @@ body{
 .banner-top .container{
 	width: 90%;
 }
-
+.sale{
+	display: none!important;
+}
 
 
 
@@ -1449,6 +1483,9 @@ body{
 	.banner-text{
 		display: none;
 
+	}
+	.banner-product-text p{
+		font-size: 25px;
 	}
 	.product-content-mid .product-ol1 {
 		display: block;
@@ -1531,7 +1568,13 @@ width: 80%;
 	width: 80%;
 	margin:0px auto;
 }
-
+.product-content-mid main {
+    width: 80%;
+    /* overflow: hidden; */
+    margin: 0px auto;
+    /* border: 1px solid blue; */
+    padding: 0px 0px;
+}
 
 
 

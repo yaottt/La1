@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/public.css">
 	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-1.11.1.js"></script>
+	<!-- <script src="js/jquery.mousewheel.js"></script> -->
 	<script src="js/bootstrap.js"></script>
 	<script src="js/style.js"></script>
+	<!-- <script src="js/index.js"></script> -->
 </head>
 <body>
 
@@ -39,7 +43,7 @@
 
       <ul class="navbar-right slide-right mid-move">
         <li class="spa"><a href="#">门店/SPA</a><span>|</span></li>
-        <li class="resg"><a href="#">登录/注册</a><span>|</span></li>
+        <li class="resg"><a href="html/login.html">登录/注册</a><span>|</span></li>
         <li class="bag"><a href="#">（0）</a><span class="iconfont icon-bao"></span></li>
 
 
@@ -79,13 +83,13 @@
 	<!-- <h2 class="slide-down-title">LA MER</h2> -->
     	<ul class="slide-down-content">
     		<li><a href="html/face-cream.html">精华面霜</a></li>
-    		<li><a href="#">畅销榜单</a></li>
+    		<li><a href="html/saletop.html">畅销榜单</a></li>
     		<li><a href="#">面部护理</a></li>
     		<li><a href="#">身体护理</a></li>
     		<li><a href="#">修护底妆</a></li>
     		<li><a href="#">甄选好礼</a></li>
     		<li><a href="#">精选系列</a></li>
-    		<li><a href="#">品牌探索</a></li>
+    		<li><a href="html/heart.html">品牌探索</a></li>
     		<li><span>|</span>
     		<span class="iconfont icon-sousuo"></span></li>
     	</ul>
@@ -95,16 +99,16 @@
 		    	<input type="text" name="" placeholder="搜索" class="search">
 		    	<div class="search-menu">
 		    		<ul>
-		    			<li><a href="#">精华面霜</a>
+		    			<li><a href="html/face-cream.html">精华面霜</a>
 		    				<img src="images/LM_SKU_332002_26766_340x340_0.webp" alt="" class="menu-pic">
 		    			</li>
-		    			<li><a href="#">畅销榜单</a></li>
+		    			<li><a href="html/saletop.html">畅销榜单</a></li>
 		    			<li><a href="#">面部护理</a></li>
 		    			<li><a href="#">身体护理</a></li>
 		    			<li><a href="#">修护底妆</a></li>
 		    			<li><a href="#">甄选好礼</a></li>
 		    			<li><a href="#">精选系列</a></li>
-		    			<li><a href="#">品牌探索</a></li>
+		    			<li><a href="html/heart.html">品牌探索</a></li>
 		    		</ul>
 		    		<div class="menu-li">
 		    				<a href="#" class="menu-down">门店/SPA</a>
@@ -407,7 +411,7 @@
 				    			<p>品牌故事</p>
 				    		</li>
 				    		<li>
-				    			<a href="#"><img src="images/HP_Pulldown_Nav_BlueHeart_2.webp" alt=""></a>
+				    			<a href="html/heart.html"><img src="images/HP_Pulldown_Nav_BlueHeart_2.webp" alt=""></a>
 				    			<p>蔚蓝心动</p>
 				    		</li>
 				    		<li>
@@ -608,7 +612,7 @@
 </div>
 
 
-<div class="product-content">
+<div class="product-content animated">
 	<div class="product-content-head">
 		<h2>畅销榜单</h2>
 		<p>万众挚爱口碑星品 满足您护肤的不同需求</p>
@@ -617,12 +621,12 @@
 		<button class="button-left">&lt;</button>
 		<button class="button-right">&gt;</button>
 		<main>
-		<ul>
+		<ul class="list-ul">
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_5X2101_101933_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_0.png" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Lip Balm</a>
 					<a href="#">海蓝之谜修护唇膏</a>
 					<a href="#">缓解滋润 柔嫩双唇</a>
@@ -643,8 +647,57 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_5X2101_101933_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_0.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
+					<a href="#">The Lip Balm</a>
+					<a href="#">海蓝之谜修护唇膏</a>
+					<a href="#">缓解滋润 柔嫩双唇</a>
+					<div class="product-span">
+						<span class="left">￥500</span>
+					</div>
+					
+					<div class="star">
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+					</div>
+					<div class="product-button">
+						<button class="fast-buy">快速购买</button>
+					</div>
+
+				</div>
+				</div>
+			</li>
+
+			<li class="product-list">
+				<div class="product-show">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_0.webp" alt="" class="pic-show pd-hide pd-show"></a>
+
+				<div class="product-text pd-hide pd-show">
+					<a href="#">The Lip Balm</a>
+					<a href="#">海蓝之谜修护唇膏</a>
+					<a href="#">缓解滋润 柔嫩双唇</a>
+					<div class="product-span">
+						<span class="left">￥500</span>
+					</div>
+					<div class="star-5">
+					<div class="star">
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+					</div>
+					</div>
+					<div class="product-button"></div>
+
+				</div>
+				</div>
+				<div class="product-hide">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_1.webp" alt="" class="pic-hide pd-hide pd-show"></a>
+				<div class="product-text pd-show pd-hide">
 					<a href="#">The Lip Balm</a>
 					<a href="#">海蓝之谜修护唇膏</a>
 					<a href="#">缓解滋润 柔嫩双唇</a>
@@ -668,10 +721,10 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_332002_26766_340x340_0.png" alt="" class="pic-show"></a>
+					<span class="sale pd-show pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5R2G01_101931_340x340_0.webp" alt="" class="pic-show pd-hide pd-show"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-show pd-hide">
 					<a href="#">Crème de la Mer</a>
 					<a href="#">海蓝之谜经典精华面霜</a>
 					<a href="#">经典奢华 柔嫩润泽</a>
@@ -693,8 +746,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_332002_26766_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5R2G01_101931_340x340_1.webp" alt="" class="pic-hide pd-hide pd-show"></a>
+				<div class="product-text pd-show pd-hide">
 					<a href="#">Crème de la Mer</a>
 					<a href="#">海蓝之谜经典精华面霜</a>
 					<a href="#">经典奢华 柔嫩润泽</a>
@@ -719,9 +772,9 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_5R2G01_101931_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_55NY01_52758_340x340_0.webp" alt="" class="pic-show pd-hide pd-show"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-show pd-hide">
 					<a href="#">The Concentrate</a>
 					<a href="#">海蓝之谜修护精华露</a>
 					<a href="#">密集修护 强韧肤质</a>
@@ -743,8 +796,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_5R2G01_101931_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_55NY01_52758_340x340_1.webp" alt="" class="pic-hide pd-hide pd-show"></a>
+				<div class="product-text pd-hide pd-show">
 					<a href="#">The Concentrate</a>
 					<a href="#">海蓝之谜修护精华露</a>
 					<a href="#">密集修护 强韧肤质</a>
@@ -769,10 +822,10 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_55NY01_52758_340x340_0.webp" alt="" class="pic-show"></a>
+					<span class="sale pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_51T401_48997_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Eye Concentrate <br>Treatment</a>
 					<a href="#">海蓝之谜浓缩修护眼霜</a>
 					<a href="#">改善细纹 淡褪黑眼圈</a>
@@ -793,8 +846,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_55NY01_52758_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_51T401_48997_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Eye Concentrate <br>Treatment</a>
 					<a href="#">海蓝之谜浓缩修护眼霜</a>
 					<a href="#">改善细纹 淡褪黑眼圈</a>
@@ -818,9 +871,9 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_51T401_48997_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_523M01_48998_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Brilliance White <br>Cleansing Foam</a>
 					<a href="#">海蓝之谜璀璨静澈洁面泡沫</a>
 					<a href="#">温和洁面 深层净透</a>
@@ -841,8 +894,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_51T401_48997_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_523M01_48998_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Brilliance White <br>Cleansing Foam</a>
 					<a href="#">海蓝之谜璀璨静澈洁面泡沫</a>
 					<a href="#">温和洁面 深层净透</a>
@@ -866,9 +919,9 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_523M01_48998_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_2WHL01_44193_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Tonic</a>
 					<a href="#">海蓝之谜焕肤水</a>
 					<a href="#">舒缓净化 唤醒肌肤</a>
@@ -890,8 +943,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_523M01_48998_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_2WHL01_44193_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Tonic</a>
 					<a href="#">海蓝之谜焕肤水</a>
 					<a href="#">舒缓净化 唤醒肌肤</a>
@@ -916,10 +969,60 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_2N0601_26754_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_2WHL01_44193_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
+					<a href="#">The Tonic</a>
+					<a href="#">海蓝之谜焕肤水</a>
+					<a href="#">舒缓净化 唤醒肌肤</a>
+					<div class="product-span">
+						<span class="left">￥420</span>
+						<span class="right">起/2种规格</span>
+					</div>
+					<div class="star-5">
+					<div class="star">
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+						<div class="star-content "></div>
+					</div>
+					</div>
+					<div class="product-button"></div>
+
+				</div>
+				</div>
+				<div class="product-hide">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_2WHL01_44193_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
+					<a href="#">The Tonic</a>
+					<a href="#">海蓝之谜焕肤水</a>
+					<a href="#">舒缓净化 唤醒肌肤</a>
+					<div class="product-span">
+						<span class="left">￥420</span>
+						<span class="right">起/2种规格</span>
+					</div>
+					
+					<div class="star">
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+						<div class="star-content star-4"></div>
+					</div>
+					<div class="product-button">
+						<button class="fast-buy">快速购买</button>
+					</div>
+
+				</div>
+				</div>
+			</li>
+			<li class="product-list">
+				<div class="product-show ">
+					<span class="sale pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_54TR01_54773_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
+
+				<div class="product-text pd-hide">
 					<a href="#">The Regenerating <br>Serum</a>
 					<a href="#">海蓝之谜活颜焕肤精华露</a>
 					<a href="#">改善细纹 精致轮廓</a>
@@ -941,8 +1044,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_2N0601_26754_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_54TR01_54773_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Regenerating <br>Serum</a>
 					<a href="#">海蓝之谜活颜焕肤精华露</a>
 					<a href="#">改善细纹 精致轮廓</a>
@@ -967,10 +1070,10 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_2WHL01_44193_340x340_0.webp" alt="" class="pic-show"></a>
+					<span class="sale pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5X2101_101933_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Moisturizing Soft <br>Cream</a>
 					<a href="#">海蓝之谜经典精华乳霜</a>
 					<a href="#">绵密质地 盈润光彩</a>
@@ -992,8 +1095,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_2WHL01_44193_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5X2101_101933_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Moisturizing Soft <br>Cream</a>
 					<a href="#">海蓝之谜经典精华乳霜</a>
 					<a href="#">绵密质地 盈润光彩</a>
@@ -1016,60 +1119,12 @@
 				</div>
 				</div>
 			</li>
+
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_54TR01_54773_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
-					<a href="#">The Lifting and <br>Firming Mask</a>
-					<a href="#">海蓝之谜紧致提升精华面膜</a>
-					<a href="#">塑颜修护 提拉紧致</a>
-					<div class="product-span">
-						<span class="left">￥2000</span>
-					</div>
-					<div class="star-5">
-					<div class="star">
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-					</div>
-					</div>
-					<div class="product-button"></div>
-
-				</div>
-				</div>
-				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_54TR01_54773_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
-					<a href="#">The Lifting and <br>Firming Mask</a>
-					<a href="#">海蓝之谜紧致提升精华面膜</a>
-					<a href="#">塑颜修护 提拉紧致</a>
-					<div class="product-span">
-						<span class="left">￥2000</span>
-					</div>
-					
-					<div class="star">
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-					</div>
-					<div class="product-button">
-						<button class="fast-buy">快速购买</button>
-					</div>
-
-				</div>
-				</div>
-			</li>
-			<li class="product-list">
-				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_5X2101_101933_340x340_0.webp" alt="" class="pic-show"></a>
-
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Lip Balm</a>
 					<a href="#">海蓝之谜修护唇膏</a>
 					<a href="#">缓解滋润 柔嫩双唇</a>
@@ -1090,8 +1145,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_5X2101_101933_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_332002_26766_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Lip Balm</a>
 					<a href="#">海蓝之谜修护唇膏</a>
 					<a href="#">缓解滋润 柔嫩双唇</a>
@@ -1115,10 +1170,10 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_332002_26766_340x340_0.png" alt="" class="pic-show"></a>
+					<span class="sale pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5R2G01_101931_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">Crème de la Mer</a>
 					<a href="#">海蓝之谜经典精华面霜</a>
 					<a href="#">经典奢华 柔嫩润泽</a>
@@ -1140,8 +1195,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_332002_26766_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5R2G01_101931_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">Crème de la Mer</a>
 					<a href="#">海蓝之谜经典精华面霜</a>
 					<a href="#">经典奢华 柔嫩润泽</a>
@@ -1166,9 +1221,9 @@
 			</li>
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_5R2G01_101931_340x340_0.webp" alt="" class="pic-show"></a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_55NY01_52758_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
+				<div class="product-text pd-hide">
 					<a href="#">The Concentrate</a>
 					<a href="#">海蓝之谜修护精华露</a>
 					<a href="#">密集修护 强韧肤质</a>
@@ -1190,8 +1245,8 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_5R2G01_101931_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
+				<a href="#" class="big-pic"><img src="images/LM_SKU_55NY01_52758_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
 					<a href="#">The Concentrate</a>
 					<a href="#">海蓝之谜修护精华露</a>
 					<a href="#">密集修护 强韧肤质</a>
@@ -1214,65 +1269,19 @@
 				</div>
 				</div>
 			</li>
-			<!-- <li class="product-list">
-				<div class="product-show">
-					<span class="sale">畅销星品</span>
-				<a href="#"><img src="images/LM_SKU_55NY01_52758_340x340_0.webp" alt="" class="pic-show"></a>
 
-				<div class="product-text">
-					<a href="#">The Eye Concentrate <br>Treatment</a>
-					<a href="#">海蓝之谜浓缩修护眼霜</a>
-					<a href="#">改善细纹 淡褪黑眼圈</a>
-					<div class="product-span">
-						<span class="left">￥1700</span>
-					</div>
-					<div class="star-5">
-					<div class="star">
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-						<div class="star-content "></div>
-					</div>
-					</div>
-					<div class="product-button"></div>
-
-				</div>
-				</div>
-				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_55NY01_52758_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
-					<a href="#">The Eye Concentrate <br>Treatment</a>
-					<a href="#">海蓝之谜浓缩修护眼霜</a>
-					<a href="#">改善细纹 淡褪黑眼圈</a>
-					<div class="product-span">
-						<span class="left">￥1700</span>
-					</div>
-					
-					<div class="star">
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-						<div class="star-content star-4"></div>
-					</div>
-					<div class="product-button">
-						<button class="fast-buy">快速购买</button>
-					</div>
-
-				</div>
-				</div>
-			</li>
 			<li class="product-list">
 				<div class="product-show">
-				<a href="#"><img src="images/LM_SKU_51T401_48997_340x340_0.webp" alt="" class="pic-show"></a>
+					<span class="sale pd-hide">畅销星品</span>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5X2101_101933_340x340_0.webp" alt="" class="pic-show pd-hide"></a>
 
-				<div class="product-text">
-					<a href="#">The Brilliance White <br>Cleansing Foam</a>
-					<a href="#">海蓝之谜璀璨静澈洁面泡沫</a>
-					<a href="#">温和洁面 深层净透</a>
+				<div class="product-text pd-hide">
+					<a href="#">The Moisturizing Soft <br>Cream</a>
+					<a href="#">海蓝之谜经典精华乳霜</a>
+					<a href="#">绵密质地 盈润光彩</a>
 					<div class="product-span">
-						<span class="left">￥750</span>
+						<span class="left">￥760</span>
+						<span class="right">起/4种规格</span>
 					</div>
 					<div class="star-5">
 					<div class="star">
@@ -1288,13 +1297,14 @@
 				</div>
 				</div>
 				<div class="product-hide">
-				<a href="#"><img src="images/LM_SKU_51T401_48997_340x340_1.webp" alt="" class="pic-hide"></a>
-				<div class="product-text">
-					<a href="#">The Brilliance White <br>Cleansing Foam</a>
-					<a href="#">海蓝之谜璀璨静澈洁面泡沫</a>
-					<a href="#">温和洁面 深层净透</a>
+				<a href="#" class="big-pic"><img src="images/LM_SKU_5X2101_101933_340x340_1.webp" alt="" class="pic-hide pd-hide"></a>
+				<div class="product-text pd-hide">
+					<a href="#">The Moisturizing Soft <br>Cream</a>
+					<a href="#">海蓝之谜经典精华乳霜</a>
+					<a href="#">绵密质地 盈润光彩</a>
 					<div class="product-span">
-						<span class="left">￥750</span>
+						<span class="left">￥760</span>
+						<span class="right">起/4种规格</span>
 					</div>
 					
 					<div class="star">
@@ -1310,7 +1320,11 @@
 
 				</div>
 				</div>
-			</li> -->
+			</li>
+
+
+
+
 		</ul>
 		</main>
 		<ol class="product-ol1">
@@ -1333,7 +1347,7 @@
 </div>
 
 <div class="banner-item">
-	<div class="banner-content">
+	<div class="banner-content banner1 animated">
 		
 		<div class="content-image">
 			<a href="#"><img src="images/kvcn_190814_1080x1080.jpg" alt=""></a>
@@ -1348,7 +1362,7 @@
 		</div>
 	</div>
 
-	<div class="banner-content">
+	<div class="banner-content banner2 animated">
 		
 		<div class="content-image">
 			<a href="#"><img src="images/kvcn_190729_1080x1080.jpg" alt=""></a>
@@ -1367,11 +1381,11 @@
 
 
 <div class="landing-page">
-	<header class="content-header">
+	<header class="content-header animated">
 		<h1>官网独享 奢宠服务</h1>
 		<p>作为LA MER尊贵的客人，我们为您呈现奢华的服务体验</p>
 	</header>
-	<div class="landing-content">
+	<div class="landing-content animated">
 		<div class="basic-grid col-lg-4 col-sm-4 col-xs-12">
 			<div class="basic-grid-pic">
 				<img src="images/Desktop_Offer_LM_19_Update_v2.webp" alt="">
@@ -1381,7 +1395,7 @@
 				<p>一份诚挚礼遇，只为初次遇见的你。
 					<br>
 				注册即可尊享新客专属首次购买礼。</p>
-				<a href="#">即刻注册</a>
+				<a href="html/login.html">即刻注册</a>
 			</div>
 		</div>
 		<div class="basic-grid col-lg-4 col-sm-4 col-xs-12">
@@ -1408,7 +1422,7 @@
 	</div>
 </div>
 
-<div class="signup">
+<div class="signup animated">
 	<article class="signup-tout">
 		<div class="signup-tout-left">
 		<p class="signup-tout-pic"><img src="images/LMCN_190515CNY_OfferTicker.webp" alt=""></p>
@@ -1425,11 +1439,11 @@
 </div>
 
 <div class="landing-page_section">
-	<header class="landing-page-header">
+	<header class="landing-page-header animated">
 		<h1>赋活滋养</h1>
 		<p>璀璨旅途，奢享一路焕变</p>
 	</header>
-	<div class="landing-product">
+	<div class="landing-product animated">
 		<div class="product-section">
 			<div class="product-section-pic">
 				<img src="images/LMCN_2019_Social_Image_Serum_346x346-1.webp" alt="">
@@ -1682,5 +1696,7 @@
 		<img src="images/wo-online-hover.png" class="online-hover">
 
 	</div>
+
+	<script src="js/index.js"></script>
 </body>
 </html>

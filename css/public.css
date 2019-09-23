@@ -14,7 +14,7 @@ a:hover{
 	text-decoration: none;
 }
 body{
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 .slide-pic{
 	margin-top:5px;
@@ -42,6 +42,13 @@ body{
 	
 	width: 20px;
 }
+.fixed{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 999;
+}
 .head-title{
 	position: absolute;
 	left: 50%;
@@ -49,13 +56,13 @@ body{
 	margin-top:5px;
 	font-size: 46px;
 	margin-bottom: 0px;
-	margin-top: 0px;
+	margin-top: 10px;
 	line-height: 35px;
 	/*font-weight: */
 }
 .slide-left{
 	float: left;
-	border:1px solid red;
+	/* border:1px solid red; */
 	line-height: 60px;
 	position: relative;
 }
@@ -79,6 +86,7 @@ body{
 }
 .booking-box h4{
 	margin:20px auto;
+	font-size: 15px;
 }
 .booking-box p{
 	/*display: block;*/
@@ -127,7 +135,7 @@ body{
 .shopping{
 	width: 350px;
 	position: absolute;
-	top:40px;
+	top:35px;
 	right: 0px;
 	border:1px solid #eee;
 	z-index: 9999;
@@ -156,7 +164,7 @@ body{
 	/*height: 370px;*/
 	border:1px solid #ccc;
 	position: absolute;
-	top:40px;
+	top:35px;
 	right: 70px;
 	background-color: #fff;
 	z-index: 1;
@@ -199,7 +207,7 @@ body{
 }
 .edit{
 	position: absolute;
-	bottom: 80px;
+	bottom: 93px;
 	right: 30px;
 	text-decoration: underline;
 }
@@ -323,19 +331,19 @@ body{
 	border-bottom: 1px solid #888;
 	color: #005c3e;
 }
-.fixed{
+/* .fixed{
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	z-index: 999;
-}
+} */
 .head-title-move{
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	display: none;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	font-size: 28px;
 	line-height: 35px;
 }
@@ -417,7 +425,7 @@ body{
 .nav-menu-content .right{
 	position: absolute;
 	top:50%;
-	right: 0px;
+	right: 1%;
 	margin-top: -15px;
 	height: 30px;
 	width: 30px;
@@ -482,6 +490,7 @@ body{
 	/*overflow: hidden;*/
 	display: none;
 	z-index: 111;
+	/* top: 5px; */
 }
 
 .pic-down{
@@ -522,18 +531,19 @@ body{
 
 .search-menu{
 	width: 100%;
-	height: calc(100vh - 98px);
+	height: calc(100vh - 83px);
 	margin-bottom: 100px;
 	position: absolute;
 	top:30px;
 	left: 0px;
-	border:1px solid pink;
+	/* border:1px solid pink; */
 	z-index: 111;
 	background-color: #fff;
 	overflow-y: scroll;
 	box-sizing: content-box;
 	resize: vertical;
 	display: none;
+
 }
 .search-menu ul li{
 	width: 88%;
@@ -626,6 +636,7 @@ body{
 	cursor: pointer;
 }
 .banner-top-content:nth-child(2){
+	width: 95%;
 	position: absolute;
 	bottom: 0px;
 	/*left:10%;*/
@@ -681,6 +692,7 @@ body{
 	background-color: #001711;
 	color: #7d7d7d;
 	overflow: hidden;
+	margin-top: 50px;
 }
 .footer-content{
 	width: 70%;
@@ -724,7 +736,7 @@ body{
 	height: 40px;
 }
 .footer-down{
-	width: 70%;
+	width: 80%;
 	/*border:1px solid red;*/
 	overflow: hidden;
 	margin:10px auto;
@@ -732,12 +744,15 @@ body{
 }
 .footer-mention-left{
 	float: left;
+	width: 40%;
 }
 .footer-mention-left p{
 	line-height: 40px;
 }
 .footer-mention-right{
 	float: right;
+	text-align: right;
+	width: 60%;
 }
 .footer-mention-right a{
 	color: #7d7d7d;
@@ -805,7 +820,7 @@ body{
 	
 	.banner-top-content{
 		width: 100%;
-		margin:0px auto;
+		margin:10px auto;
 	}
 	.banner-top-content img{
 		display: block;
@@ -866,7 +881,7 @@ body{
 		position: absolute;
 		top:0%;
 		left: 50%;
-		    transform: translateX(-50%)
+		    /* transform: translateX(-50%) */
 	}
 	.head-title{
 		font-size: 28px;
@@ -913,6 +928,13 @@ body{
 	.sangang{
 		display: none;
 	}
+	.fixed{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 999;
+}
 
 }
 @media (max-width: 1024px) {
@@ -945,9 +967,14 @@ body{
 	.slide-right{
 		float: right;
 		margin: 0px;
-		line-height: 50px;
+		line-height: 35px;
+		margin-right: 10px;
 
 	}
+	.power-content .power-container {
+    width: 100%;
+
+}
 
 
 
@@ -985,16 +1012,16 @@ body{
 	width: 100%;
 }
 	.product-content-mid ul{
-	width: 1200%;
+	width: 1400%;
 	/*border: 1px solid pink;*/
 	position: relative;
-	left: 0%;
+	left: -100%;
 	padding-right: 1px;
 }
 	.product-content-mid ul li{
 	/*border: 1px solid orange;*/
 	float: left;
-	width: 8.03%;
+	width: 6.84%;
 	height: 100%;
 }
 .product-content-mid ul img{
@@ -1050,21 +1077,39 @@ width: 80%;
 	width: 150px;
 }
 .signup-tout-left{
-	height: 240px;
+	height: 315px;
 }
 .head-title-move{
-	margin-left: 20px;
+	/* margin-left: 20px; */
+	transform: translateX(-50%)!important;
+    /* left: 5%; */
+}
+/* 底部 */
+.footer-mention-right {
+    float: right;
+    text-align: left;
+    width: 100%;
+}
+.footer-mention-left {
+    float: left;
+    width: 100%;
+}
+
+
+
 }
 
 
 
 
-}
 
 @media (min-width: 768px){
 	.footer-icon  img{
 	/*width: 8%;*/
 	margin-right: 10px;
 
+}
+.head-title-move {
+    transform: translateX(0%)!important;
 }
 }

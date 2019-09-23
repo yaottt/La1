@@ -1,0 +1,351 @@
+/*
+* @Author: xxi
+* @Date:   2019-09-07 22:41:48
+* @Last Modified by:   hp
+* @Last Modified time: 2019-09-19 12:48:49
+*/
+.login-banner{
+	/* border: 1px solid blue; */
+	width: 100%;
+}
+.login-content{
+	/* border: 1px solid pink; */
+	width: 100%;
+	padding: 50px 0 0 0;
+    max-width: 890px;
+    margin: 0px auto;
+    /* display: none; */
+}
+.login-content h2{
+	line-height: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.login-form{
+	/* border: 1px solid green; */
+	width: 390px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+.login-content input[type='text']{
+	height: 47px;
+    border-radius: 4px;
+    width: 100%;
+	outline-style: none;
+	border-style: none;
+	border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 40px 0 15px;
+}
+.login-user{
+	margin-bottom: 10px;
+}
+.login-password{
+	margin-bottom: 10px;
+	position: relative;
+	/* border: 1px solid red; */
+}
+.login-password .bg-pic{
+	width: 18px;
+    height: 21px;
+	/* border: 1px solid orange; */
+	background-image: url('../images/toggle_password_display_icon.webp');
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translateY(-50%);
+	background-position: -17px center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+.login-form .forget a{
+	font-size: 15px;
+    line-height: 1.5;
+}
+.login-form .forget a:hover{
+	color: #005c3e;
+}
+.login-mail{
+	margin: 10px 0px;
+}
+.login-submit button{
+	height: 47px;
+    border-radius: 4px;
+    width: 100%;
+	outline-style: none;
+	border-style: none;
+	/* border: 1px solid #c2c2c2; */
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 40px;
+    /* padding: 0 40px 0 15px; */
+    text-align: center;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+.login-submit button:hover{
+	background-color: #005c3e;
+}
+.login-content .res{
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.login-content .res a{
+	font-size: 16px;
+}
+
+/* 注册 */
+.login-account{
+	/* border: 1px solid pink; */
+	/* width: 100%; */
+	padding: 50px 0 0 0;
+    max-width: 890px;
+    margin: 0px auto;
+    display: none;
+}
+.login-account h2{
+	line-height: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.account-form{
+	/* border: 1px solid green; */
+	width: 390px;
+	margin: 0px auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.login-account input[type='text']{
+	height: 47px;
+    border-radius: 4px;
+    width: 100%;
+	outline-style: none;
+	border-style: none;
+	border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 40px 0 15px;
+}
+.login-account input[type='password']{
+	height: 47px;
+    border-radius: 4px;
+    width: 100%;
+	outline-style: none;
+	border-style: none;
+	border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 40px 0 15px;
+}
+.account-user{
+	margin-bottom: 10px;
+}
+.account-mail{
+	margin-bottom: 10px;
+}
+.account-password{
+	margin-bottom: 10px;
+}
+.phone-number {
+	text-align: center;
+	font-size: 15px;
+}
+.birthday{
+	margin-bottom: 10px;
+}
+.birthday p{
+	margin-top: 10px;
+}
+.birthday .select-day{
+	/* border: 1px solid orange; */
+}
+.select-year, .select-month, .select-date{
+	display: inline-block;
+}
+.select-year #birth-year{
+	cursor: pointer;
+    min-width: 60px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    color: #1b1b1b;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px 0 15px;
+    letter-spacing: .05em;
+    background-color: #ffffff;
+    outline-style: none;
+
+/*     background-repeat: no-repeat;
+    background-position: 100% 50%; */
+}
+.select-year #birth-year:active{
+	border-color: #005c3e
+}
+.select-year #birth-year:focus{
+	border-color: #005c3e
+}
+.select-month #birth-month{
+	cursor: pointer;
+    min-width: 40px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    color: #1b1b1b;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px 0 15px;
+    letter-spacing: .05em;
+    background-color: #ffffff;
+    outline-style: none;
+}
+.select-month #birth-month:active{
+	border-color: #005c3e
+}
+.select-month #birth-month:focus{
+	border-color: #005c3e
+}
+.select-date #birth-date{
+	cursor: pointer;
+    min-width: 40px;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    color: #1b1b1b;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px 0 15px;
+    letter-spacing: .05em;
+    background-color: #ffffff;
+    outline-style: none;
+}
+.selectdate #birth-date:active{
+	border-color: #005c3e
+}
+.selectdate #birth-date:focus{
+	border-color: #005c3e
+}
+.right-icon{
+	/* border: 1px solid #333; */
+}
+.pass-checkbox .p-box{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border: 1px solid #333;
+}
+.pass-checkbox .right-icon{
+	display: block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	opacity: 0;
+	margin: 0px;
+}
+.reading-checkbox .r-box{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border: 1px solid #333;
+}
+.reading-checkbox .right-icon{
+	display: block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	/* opacity: 0; */
+	margin: 0px;
+}
+.reading{
+	margin-bottom: 10px;
+}
+.agree-checkbox .a-box{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border: 1px solid #333;
+}
+.agree-checkbox .right-icon{
+	display: block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	/* opacity: 0; */
+	margin: 0px;
+}
+.reading-checkbox span, a{
+	font-size: 15px;
+	margin-left: 0px;
+}
+.agree-checkbox span, a{
+	font-size: 15px;
+	margin-left: 0px;
+}
+.pass-checkbox span{
+	font-size: 15px;
+}
+.account-res button{
+	height: 47px;
+    border-radius: 4px;
+    width: 100%;
+	outline-style: none;
+	border-style: none;
+	/* border: 1px solid #c2c2c2; */
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 40px;
+    /* padding: 0 40px 0 15px; */
+    text-align: center;
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 10px 0px;
+}
+.account-res button:hover{
+	background-color:  #005c3e
+}
+.login-res{
+	text-align: center;
+	margin-top: 30px;
+}
+.login-res a{
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+}
+.login-res a:hover{
+	color:  #005c3e
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+	.login-content {
+
+    padding: 0px 0 0 0;
+
+}
+	.login-form{
+	width: 100%;
+}
+.account-form{
+	width: 100%;
+}
+.login-banner {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 0px auto;
+}
+}
